@@ -1,0 +1,79 @@
+.navbar div span{/*con esto centramos el titulo del navbar*/
+    margin: 0 auto;
+}
+body{
+    background-color:black;
+}
+h6 {
+    color: aliceblue;
+}
+
+section#principal {
+    display: inline-block; /* este atributo funciona de manera   que si a los elementos les queda espacio se colocan uno al lado del otro.*/
+    margin: 0 auto;         /*con este atributo se centra respecto a su contenedor*/
+    text-align: center;    /*centra todo su texto*/
+    width: 100%; /*ocupa el 100% de su contenedor*/
+
+}          
+
+article#comandos {
+    padding-top: 30px;
+    border: 4px solid gray;/*borde que marca la seccion de comandos*/
+    display: inline-block; /*los elementos funcionan como lineas y bbloques igual si tienen espacio se acomodan uno a  lado del otro*/
+    min-height: 300px;/*altura minima*/
+    vertical-align: top;/*se linea arriba de manera que sea parejo a la siguien seccion*/
+    width: 25%;/*mide el 25% de su contenedor*/
+}
+
+article#tablero {
+    border: 5px solid lightblue;/*borde que marca la seccion*/
+    display: inline-block;/*igual si tiene espacio se alinea uno a lado del otro*/
+    margin: 0 auto;/*con este se alinea a su otro contenedor de a lado*/
+    text-align: center;/*centra todo su texto*/
+    width: 50%;/*mide el 50% de su contenedor*/
+}
+
+article#tablero input { /*con esto damos stilo a los botonos del tablero*/
+    font-size: 3em;
+    height: 80px;
+    margin: 10px;
+    width: 80px;
+    
+}
+/*en esta parte se da estilo a la parte de comandos botones y etiqueta algo sencillo */
+input[type="button"]#iniciar {
+    font-size: 0.8em;
+    margin-top: 2em;
+    padding: 0.7em;
+
+}
+
+input[type="text"]{
+    font-size: 1em;
+    margin: 0.2em;
+    padding: 0.1em;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+}
+/* -----------------aqui acaba la parte de comandos y etiqueta-----------------------*/
+
+
+/*en esta parte se da estilo a los diferentes cambios que daran los botones al interactuar con el usuario*/
+.botonInicial {
+    color: #77d;                 /*aqui se usa el mismo color del fondo y letra para que el estado de inicio aparezca limpio*/
+    background-color: #77d;
+}
+
+.botonJugador1{
+    color: white;
+    background-color: #d77;
+}
+.botonJugador2{
+    color: white;
+    background-color:#7d7;
+}
